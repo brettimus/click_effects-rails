@@ -1,6 +1,10 @@
-# ClickEffects::Rails
+# click_effects-rails
 
 asset gem for the stellar [ClickEffects library](https://github.com/codrops/ClickEffects) from [codrops](http://tympanus.net/codrops/).
+
+I haven't included any of the javascript or custom SVG from codrop's original implementation.
+
+This release is just pure CSS, which means some of the animations may not work (e.g., _zorka_).
 
 ## Installation
 
