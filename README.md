@@ -14,13 +14,15 @@ Add this line to your application's Gemfile:
 gem 'click_effects-rails'
 ```
 
+Then, add this line to your `application.css` file.
+```
+*= require click_effects
+```
+
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install click_effects-rails
 
 ## Usage
 
