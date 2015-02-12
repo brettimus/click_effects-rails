@@ -1,6 +1,10 @@
 var clickEffectHandler = function() {
     $(".cbutton").click(function() {
-        $(this).addClass("cbutton--click");
+        $el = $(this);
+        $el.addClass("cbutton--click");
+        setTimeout(function() {
+            $el.removeClass("cbutton--click");
+        }, 800);
     });
 };
 $(document).ready(clickEffectHandler);

@@ -1,16 +1,22 @@
 # click_effects-rails
 
-asset gem for the stellar [ClickEffects library](https://github.com/codrops/ClickEffects) from [codrops](http://tympanus.net/codrops/).
+**NB: This is very rough**
+
+An asset gem for the stellar [ClickEffects library](https://github.com/codrops/ClickEffects) from [codrops](http://tympanus.net/codrops/).
 
 I haven't included any of the custom SVG from codrop's original implementation, which means some of the animations may not work (e.g., _zorka_).
 
-Also, because this is written for rails, I rewrote the original javascript to implement jQuery.
+Also, I am lazy and this is rails, so I just used some hacky jQuery to add/remove the `cbutton--click` class.
 
-Also also, I'm lazy. I didn't include any of the modernizr code or handle mobile. You're free to lend a hand (pull request)
+Also also, I'm super lazy. I didn't include any of the modernizr code. You're free to lend a hand (pull request) to fix my lazy.
 
 ## TODO
 
 If you're awesome, you'll consider modularizing all of the animation code so one can include only the animations one needs.
+
+Or, maybe you want to create a soild javascript interface for this little design-ditty.
+
+Who knows? Go wild!
 
 ## Installation
 
@@ -20,9 +26,14 @@ Add this line to your application's Gemfile:
 gem 'click_effects-rails'
 ```
 
-Then, add this line to your `application.css` file.
+Then, add this line to your `application.css` file:
 ```
 *= require click_effects
+```
+
+And this line to your `application.js` file:
+```
+//= require click_effects
 ```
 
 And then execute:
@@ -49,4 +60,9 @@ See the original license for the codrop project [here](http://tympanus.net/codro
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+5. Create a new Pull Request - we'll do the honor system that you tested it
+
+## Testing
+
+I created an ad-hoc rails app to test the gem.
+Maybe I'll put that up later. `¯\_(ツ)_/¯`
